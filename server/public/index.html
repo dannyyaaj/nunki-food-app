@@ -10,9 +10,14 @@
   <title>Food App</title>
 </head>
 
-<body>
-  <h1>Hello World</h1>
+<body ng-app="foodApp">
+  <div ng-controller="WelcomeController as vm">
+    <h1>Hello World</h1>
 
+
+
+    <input type="text" ng-model="vm.intro"> {{'You typed: ' + vm.intro}}
+  </div>
 </body>
 
 </html>
